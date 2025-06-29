@@ -5,6 +5,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         int eded = sc.nextInt();
+        int temp = eded;
         int terseded = 0;
             while (eded>0){
                 int qaliq = eded%10;
@@ -13,5 +14,12 @@ public class Main {
                 eded = eded/10;
 
     }
+
         System.out.println(terseded);
+            if(temp == terseded){
+                System.out.println("daxil edilen eded palindromdur");
+            }
+            else {
+                System.out.println("daxil edilen eded palindrom deyil");
+            }
 }}
